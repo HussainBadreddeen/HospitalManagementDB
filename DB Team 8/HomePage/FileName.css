@@ -1,0 +1,68 @@
+﻿body {
+    margin: 0 px;
+    padding: 0;
+    font-family: Roboto, -apple-system, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+    background: #2f2fA2;
+}
+
+Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    width: 99%;
+    height: 100vh;
+    position: fixed;
+}
+.Title {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+}
+.Title h3 {
+    font-size: 70px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.Title p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 25px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.cta-button {
+    width: 200px;
+    padding: 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-size: 25px;
+    margin: 1px;
+    color: #fff;
+    background-color: #2f2fA2;
+    transition: all 0.5s ease;
+}
+.cta-button:hover {
+    border: none;
+    background-color: #f64c71;
+}
+.move-up {
+    animation: moveUpAnimation 1s ease-in-out forwards;
+}
+
+@keyframes moveUpAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}

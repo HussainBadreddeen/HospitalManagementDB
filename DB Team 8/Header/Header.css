@@ -1,0 +1,121 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    background-color: #2f2fA2;
+    --text-color: white;
+    --bg-color: #2f2fA2;
+    color: white;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #2f2fA2;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: #2f2fA2;
+    color: white;
+    /* background: transparent; */
+    /* padding: 28px 12%; */
+    transition: all .50s ease;
+    padding-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+    .logo i {
+        color: #F64C72;
+        font-size: 28px;
+        margin-right: 3px;
+    }
+
+    .logo span {
+        color: white;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+.navbar {
+    display: flex;
+}
+
+    .navbar a {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0px 30px;
+        transition: all 0.50s ease;
+    }
+
+        .navbar a:hover {
+            color: #f64c71;
+            cursor: pointer;
+        }
+
+        .navbar a.active {
+            color: #f64c71;
+        }
+
+.main {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+}
+
+    .main a {
+        color: white;
+        margin-left: 20px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: all 0.5s ease;
+    }
+
+        .main a:hover {
+            color: #f64c71;
+            cursor: pointer;
+        }
+
+        .main a.active {
+            color: #f64c71;
+        }
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+    .user i {
+        color: #f64c71;
+        margin-right: 7px;
+        font-size: 28px;
+    }
+
+#menu-icon {
+    font-size: 35px;
+    display: none;
+}
